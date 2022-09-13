@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp快捷程序可视化", "CSharp快捷程序可视化\CSharp快捷程序可视化.csproj", "{A0667005-E759-4184-A376-23050092A0E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0667005-E759-4184-A376-23050092A0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0667005-E759-4184-A376-23050092A0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0667005-E759-4184-A376-23050092A0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0667005-E759-4184-A376-23050092A0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE64CDF8-5534-41AE-9DA9-00CE2DA1E310}
+	EndGlobalSection
+EndGlobal
