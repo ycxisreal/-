@@ -110,6 +110,7 @@ namespace CSharp快捷程序可视化
             comboBox1.DataSource=null;
             comboBox1.DataSource = G_name;
         }
+        //1
     }
     public class Game
     {
