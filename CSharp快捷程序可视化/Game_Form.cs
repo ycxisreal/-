@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.IO;
 namespace CSharp快捷程序可视化
 {
     using System.Collections;
@@ -35,7 +36,6 @@ namespace CSharp快捷程序可视化
             SW_MAX = 10
         }
         [DllImport("shell32.dll")]
-        //
         public static extern IntPtr ShellExecute(
          IntPtr hwnd,
          string lpszOp,
@@ -86,6 +86,11 @@ namespace CSharp快捷程序可视化
                 MessageBox.Show("还没有添加应用！");
                 return;
             }
+            else if(comboBox1.SelectedItem==null)
+            {
+                MessageBox.Show("未选择应用！");
+                return;
+            }
             int Index=comboBox1.SelectedIndex;
             ShellExecute(IntPtr.Zero, "open", games[Index].path, null, null, ShowWindowCommands.SW_SHOWNORMAL);
             games[Index].times++;
@@ -110,7 +115,7 @@ namespace CSharp快捷程序可视化
             comboBox1.DataSource=null;
             comboBox1.DataSource = G_name;
         }
-        //1
+        
     }
     public class Game
     {

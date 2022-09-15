@@ -2,6 +2,7 @@ namespace CSharp快捷程序可视化
 {
     using System.Runtime.InteropServices;
     using System.Diagnostics;
+    using System.IO;
     public partial class Main_Form : Form
     {
         List<G> times_G = new List<G>();
@@ -24,6 +25,8 @@ namespace CSharp快捷程序可视化
         {
             Game_Form game_Form = new Game_Form();
             game_Form.ShowDialog();
+            //储存
+            
             foreach (Game a in game_Form.games)//从上个窗口接受数据
                 times_G.Add(new G(a.name, a.times)); 
 
