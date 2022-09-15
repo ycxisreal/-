@@ -46,7 +46,7 @@
             this.GameButton.Name = "GameButton";
             this.GameButton.Size = new System.Drawing.Size(168, 60);
             this.GameButton.TabIndex = 0;
-            this.GameButton.Text = "button1";
+            this.GameButton.Text = "管理应用";
             this.GameButton.UseVisualStyleBackColor = false;
             this.GameButton.Click += new System.EventHandler(this.GameButton_Click);
             // 
@@ -58,7 +58,7 @@
             this.WebButton.Name = "WebButton";
             this.WebButton.Size = new System.Drawing.Size(168, 60);
             this.WebButton.TabIndex = 1;
-            this.WebButton.Text = "button1";
+            this.WebButton.Text = "管理网站";
             this.WebButton.UseVisualStyleBackColor = false;
             // 
             // About

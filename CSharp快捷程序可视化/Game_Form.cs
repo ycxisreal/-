@@ -50,6 +50,8 @@ namespace CSharp快捷程序可视化
             initial();
             foreach (Game game in games)
                 G_name.Add(game.name);
+            show_games();
+            Datasource_update();
         }
 
         private void add_Click(object sender, EventArgs e)//添加按钮
@@ -77,7 +79,22 @@ namespace CSharp快捷程序可视化
         }
         public void initial()//读取
         {
-
+            StreamReader sr=new StreamReader("game.txt",Encoding.Default);
+            string line;
+            string name="";
+            string path="";
+            int timer = 1;
+            while((line=sr.ReadLine())!=null)
+            {
+                if (timer % 3 == 1)
+                    name = line;
+                else if (timer % 3 == 2)
+                    path = line;
+                else
+                    games.Add(new Game(name, path,Convert.ToInt32(line)));
+                timer++;
+            }
+            sr.Close();
         }
         private void Start_Click(object sender, EventArgs e)
         {

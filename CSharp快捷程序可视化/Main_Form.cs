@@ -3,6 +3,7 @@ namespace CSharp快捷程序可视化
     using System.Runtime.InteropServices;
     using System.Diagnostics;
     using System.IO;
+    using System.Text;
     public partial class Main_Form : Form
     {
         List<G> times_G = new List<G>();
@@ -25,8 +26,17 @@ namespace CSharp快捷程序可视化
         {
             Game_Form game_Form = new Game_Form();
             game_Form.ShowDialog();
-            //储存
-            
+            //储存信息
+            FileStream fs=new FileStream("game.txt",FileMode.Create);
+            fs.Close();
+            StreamWriter sr = new StreamWriter("game.txt");
+            foreach (Game a in game_Form.games)
+            {
+                sr.WriteLine(a.name);
+                sr.WriteLine(a.path);
+                sr.WriteLine(a.times);
+            }
+            sr.Close();
             foreach (Game a in game_Form.games)//从上个窗口接受数据
                 times_G.Add(new G(a.name, a.times)); 
 
