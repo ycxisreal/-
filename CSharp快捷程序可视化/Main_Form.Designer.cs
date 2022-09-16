@@ -60,6 +60,7 @@
             this.WebButton.TabIndex = 1;
             this.WebButton.Text = "管理网站";
             this.WebButton.UseVisualStyleBackColor = false;
+            this.WebButton.Click += new System.EventHandler(this.WebButton_Click);
             // 
             // About
             // 
@@ -128,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(555, 675);
+            this.ClientSize = new System.Drawing.Size(555, 674);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.统计按钮);
             this.Controls.Add(this.常用文件夹);
@@ -138,7 +139,7 @@
             this.Controls.Add(this.GameButton);
             this.MaximizeBox = false;
             this.Name = "Main_Form";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ycx的快捷程序";
             this.ResumeLayout(false);
             this.PerformLayout();

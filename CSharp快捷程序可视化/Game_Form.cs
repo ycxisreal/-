@@ -67,8 +67,6 @@ namespace CSharp快捷程序可视化
                 G_name.Add(a.name);
                 Datasource_update();
             }
-            
-                
             show_games();
         }
         public void show_games()//在textbox展示
