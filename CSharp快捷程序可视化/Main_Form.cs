@@ -1,9 +1,7 @@
 namespace CSharp快捷程序可视化
 {
-    using System.Runtime.InteropServices;
     using System.Diagnostics;
     using System.IO;
-    using System.Text;
     public partial class Main_Form : Form
     {
         List<G> times_G = new List<G>();
@@ -74,6 +72,11 @@ namespace CSharp快捷程序可视化
             sw.Close();
             foreach(Web a in web_Form.webs)
                 times_W.Add(new W(a.name, a.times));
+        }
+        private void FilesButton_Click(object sender, EventArgs e)
+        {
+            File_Form file_Form = new File_Form();
+            file_Form.ShowDialog();
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

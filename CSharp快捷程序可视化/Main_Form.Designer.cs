@@ -33,7 +33,7 @@
             this.WebButton = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
             this.webpath = new System.Windows.Forms.LinkLabel();
-            this.常用文件夹 = new System.Windows.Forms.Button();
+            this.FilesButton = new System.Windows.Forms.Button();
             this.统计按钮 = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
@@ -88,16 +88,17 @@
             this.webpath.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.webpath.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // 常用文件夹
+            // FilesButton
             // 
-            this.常用文件夹.BackColor = System.Drawing.Color.Transparent;
-            this.常用文件夹.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.常用文件夹.Location = new System.Drawing.Point(229, 195);
-            this.常用文件夹.Name = "常用文件夹";
-            this.常用文件夹.Size = new System.Drawing.Size(168, 60);
-            this.常用文件夹.TabIndex = 4;
-            this.常用文件夹.Text = "文件夹选项";
-            this.常用文件夹.UseVisualStyleBackColor = false;
+            this.FilesButton.BackColor = System.Drawing.Color.Transparent;
+            this.FilesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FilesButton.Location = new System.Drawing.Point(229, 195);
+            this.FilesButton.Name = "FilesButton";
+            this.FilesButton.Size = new System.Drawing.Size(168, 60);
+            this.FilesButton.TabIndex = 4;
+            this.FilesButton.Text = "常用文件夹";
+            this.FilesButton.UseVisualStyleBackColor = false;
+            this.FilesButton.Click += new System.EventHandler(this.FilesButton_Click);
             // 
             // 统计按钮
             // 
@@ -132,7 +133,7 @@
             this.ClientSize = new System.Drawing.Size(555, 674);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.统计按钮);
-            this.Controls.Add(this.常用文件夹);
+            this.Controls.Add(this.FilesButton);
             this.Controls.Add(this.webpath);
             this.Controls.Add(this.About);
             this.Controls.Add(this.WebButton);
@@ -152,7 +153,7 @@
         private Button WebButton;
         private Button About;
         private LinkLabel webpath;
-        private Button 常用文件夹;
+        private Button FilesButton;
         private Button 统计按钮;
         private LinkLabel linkLabel2;
     }

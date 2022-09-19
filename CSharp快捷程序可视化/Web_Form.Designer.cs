@@ -46,7 +46,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(208, 411);
-            this.textBox1.TabIndex = 4;
+            this.textBox1.TabIndex = 3;
             this.textBox1.WordWrap = false;
             // 
             // label1
@@ -121,11 +121,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(479, 465);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.add);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.MaximizeBox = false;
