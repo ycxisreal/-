@@ -22,7 +22,7 @@ namespace CSharp快捷程序可视化
             A_Buttons_ini();
             Labels_ini();
         }
-        //111
+        //1
         public void A_Buttons_ini()
         {
             A_buttons.Add(S1);
