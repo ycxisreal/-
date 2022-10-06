@@ -50,6 +50,7 @@ namespace CSharp快捷程序可视化
                 sr.WriteLine(a.times);
             }
             sr.Close();
+            times_G.Clear();
             foreach (Game a in game_Form.games)//从上个窗口接受数据
                 times_G.Add(new G(a.name, a.times)); 
         }
@@ -70,13 +71,29 @@ namespace CSharp快捷程序可视化
                 sw.WriteLine(a.times);
             }
             sw.Close();
+            //记录
+            times_W.Clear();
             foreach(Web a in web_Form.webs)
                 times_W.Add(new W(a.name, a.times));
+            //又有bug了
         }
         private void FilesButton_Click(object sender, EventArgs e)
         {
+            StreamWriter temp = new StreamWriter("file.txt", true);
+            temp.Close();
             File_Form file_Form = new File_Form();
             file_Form.ShowDialog();
+            FileStream fs = new FileStream("web.txt", FileMode.Create);
+            fs.Close();//删除原有文件中的信息
+            //储存文件夹信息
+            StreamWriter streamWriter = new StreamWriter("file.txt");
+            foreach(Myfile a in file_Form.files)
+            {
+                streamWriter.WriteLine(a.path);
+                streamWriter.WriteLine(a.num);
+            }
+            streamWriter.Close();
+
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -86,6 +103,19 @@ namespace CSharp快捷程序可视化
         {
             Process.Start("explorer.exe", "https://github.com/ycxisreal");
         }
-        
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            string text = "快捷程序V1.1\r\n" +
+                "作者：杨春潇\r\n" +
+                "qq：1634770529\r\n" +
+                "有问题请反馈";
+            MessageBox.Show(text);
+        }
+
+        private void 统计按钮_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

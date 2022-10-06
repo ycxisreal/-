@@ -111,7 +111,7 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(145, 47);
             this.add.TabIndex = 8;
-            this.add.Text = "添加新应用";
+            this.add.Text = "添加新网站";
             this.add.UseVisualStyleBackColor = true;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
@@ -132,6 +132,7 @@
             this.Name = "Web_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "网站";
+            this.Load += new System.EventHandler(this.Web_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -72,6 +72,7 @@
             this.About.TabIndex = 2;
             this.About.Text = "About";
             this.About.UseVisualStyleBackColor = false;
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // webpath
             // 
@@ -110,6 +111,7 @@
             this.统计按钮.TabIndex = 5;
             this.统计按钮.Text = "统计信息";
             this.统计按钮.UseVisualStyleBackColor = false;
+            this.统计按钮.Click += new System.EventHandler(this.统计按钮_Click);
             // 
             // linkLabel2
             // 

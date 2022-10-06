@@ -99,6 +99,11 @@ namespace CSharp快捷程序可视化
             show_web();
             datasource_update();
         }
+
+        private void Web_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Web
     {
