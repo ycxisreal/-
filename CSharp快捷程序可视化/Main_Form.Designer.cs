@@ -34,7 +34,7 @@
             this.About = new System.Windows.Forms.Button();
             this.webpath = new System.Windows.Forms.LinkLabel();
             this.FilesButton = new System.Windows.Forms.Button();
-            this.统计按钮 = new System.Windows.Forms.Button();
+            this.tongji = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -101,17 +101,17 @@
             this.FilesButton.UseVisualStyleBackColor = false;
             this.FilesButton.Click += new System.EventHandler(this.FilesButton_Click);
             // 
-            // 统计按钮
+            // tongji
             // 
-            this.统计按钮.BackColor = System.Drawing.Color.Transparent;
-            this.统计按钮.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.统计按钮.Location = new System.Drawing.Point(24, 294);
-            this.统计按钮.Name = "统计按钮";
-            this.统计按钮.Size = new System.Drawing.Size(168, 60);
-            this.统计按钮.TabIndex = 5;
-            this.统计按钮.Text = "统计信息";
-            this.统计按钮.UseVisualStyleBackColor = false;
-            this.统计按钮.Click += new System.EventHandler(this.统计按钮_Click);
+            this.tongji.BackColor = System.Drawing.Color.Transparent;
+            this.tongji.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tongji.Location = new System.Drawing.Point(24, 294);
+            this.tongji.Name = "tongji";
+            this.tongji.Size = new System.Drawing.Size(168, 60);
+            this.tongji.TabIndex = 5;
+            this.tongji.Text = "统计信息";
+            this.tongji.UseVisualStyleBackColor = false;
+            this.tongji.Click += new System.EventHandler(this.tongji_Click);
             // 
             // linkLabel2
             // 
@@ -134,7 +134,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(555, 674);
             this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.统计按钮);
+            this.Controls.Add(this.tongji);
             this.Controls.Add(this.FilesButton);
             this.Controls.Add(this.webpath);
             this.Controls.Add(this.About);
@@ -156,7 +156,7 @@
         private Button About;
         private LinkLabel webpath;
         private Button FilesButton;
-        private Button 统计按钮;
+        private Button tongji;
         private LinkLabel linkLabel2;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace CSharp快捷程序可视化
 {
@@ -31,10 +32,14 @@ namespace CSharp快捷程序可视化
                 return;
             }
             name=nameBox.Text;
-            url = webBox.Text;
+            //检测输入的网址是否完整，不完整则添加前缀
+            Regex regex = new Regex("\\Ahttps?://");
+            if(!regex.IsMatch(webBox.Text))
+                url = "https://"+webBox.Text;
+            else
+                url = webBox.Text;
             Close();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Close();

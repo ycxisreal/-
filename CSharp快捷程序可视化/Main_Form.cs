@@ -75,7 +75,6 @@ namespace CSharp快捷程序可视化
             times_W.Clear();
             foreach(Web a in web_Form.webs)
                 times_W.Add(new W(a.name, a.times));
-            //又有bug了
         }
         private void FilesButton_Click(object sender, EventArgs e)
         {
@@ -83,7 +82,7 @@ namespace CSharp快捷程序可视化
             temp.Close();
             File_Form file_Form = new File_Form();
             file_Form.ShowDialog();
-            FileStream fs = new FileStream("web.txt", FileMode.Create);
+            FileStream fs = new FileStream("file.txt", FileMode.Create);
             fs.Close();//删除原有文件中的信息
             //储存文件夹信息
             StreamWriter streamWriter = new StreamWriter("file.txt");
@@ -113,9 +112,10 @@ namespace CSharp快捷程序可视化
             MessageBox.Show(text);
         }
 
-        private void 统计按钮_Click(object sender, EventArgs e)
+        private void tongji_Click(object sender, EventArgs e)
         {
-            
+            Count_Form count_Form = new Count_Form();
+            count_Form.ShowDialog();
         }
     }
 }
