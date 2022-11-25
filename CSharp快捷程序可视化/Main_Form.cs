@@ -1,5 +1,6 @@
 namespace CSharp快捷程序可视化
 {
+    using System.Text;
     using System.Diagnostics;
     using System.IO;
     public partial class Main_Form : Form
@@ -28,9 +29,40 @@ namespace CSharp快捷程序可视化
         public Main_Form()
         {
             InitializeComponent();
-            
+            initializeCountServise();
         }
+        private void initializeCountServise()
+        {
+            StreamWriter temp1 = new StreamWriter("game.txt", true);
+            temp1.Close();
+            temp1 = new StreamWriter("web.txt", true);
+            temp1.Close();
 
+            StreamReader streamReader = new StreamReader("game.txt", Encoding.Default);
+            string name="";
+            string temp;
+            int timer = 1;
+            while((temp = streamReader.ReadLine())!=null)
+            {
+                if (timer % 3 == 1)
+                    name = temp;
+                else if (timer % 3 == 0)
+                    times_G.Add(new G(name, Convert.ToInt32(temp)));
+                timer++;
+            }
+            streamReader.Close();
+            streamReader = new StreamReader("web.txt",Encoding.Default);
+            timer = 1;
+            while ((temp = streamReader.ReadLine()) != null)
+            {
+                if (timer % 3 == 1)
+                    name = temp;
+                else if (timer % 3 == 0)
+                    times_W.Add(new W(name, Convert.ToInt32(temp)));
+                timer++;
+            }
+            streamReader.Close();
+        }
         private void GameButton_Click(object sender, EventArgs e)
         {
             //临时
@@ -114,7 +146,7 @@ namespace CSharp快捷程序可视化
 
         private void tongji_Click(object sender, EventArgs e)
         {
-            Count_Form count_Form = new Count_Form();
+            Count_Form count_Form = new Count_Form(times_G,times_W);
             count_Form.ShowDialog();
         }
     }

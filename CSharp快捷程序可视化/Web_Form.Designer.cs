@@ -41,11 +41,12 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(12, 42);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(208, 411);
+            this.textBox1.Size = new System.Drawing.Size(253, 411);
             this.textBox1.TabIndex = 3;
             this.textBox1.WordWrap = false;
             // 
@@ -54,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(56, 9);
+            this.label1.Location = new System.Drawing.Point(76, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 5;
@@ -64,17 +65,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(285, 28);
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(338, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.Size = new System.Drawing.Size(110, 31);
             this.label2.TabIndex = 12;
             this.label2.Text = "网站选择";
             // 
             // Start
             // 
             this.Start.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Start.Location = new System.Drawing.Point(322, 146);
+            this.Start.Location = new System.Drawing.Point(322, 272);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(145, 47);
             this.Start.TabIndex = 11;
@@ -85,7 +86,7 @@
             // Delete
             // 
             this.Delete.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Delete.Location = new System.Drawing.Point(322, 199);
+            this.Delete.Location = new System.Drawing.Point(322, 341);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(145, 47);
             this.Delete.TabIndex = 10;
@@ -97,17 +98,18 @@
             // 
             this.comboBox1.DropDownHeight = 200;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(226, 66);
+            this.comboBox1.Location = new System.Drawing.Point(275, 56);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 32);
+            this.comboBox1.Size = new System.Drawing.Size(241, 39);
             this.comboBox1.TabIndex = 9;
             // 
             // add
             // 
             this.add.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.add.Location = new System.Drawing.Point(322, 252);
+            this.add.Location = new System.Drawing.Point(322, 406);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(145, 47);
             this.add.TabIndex = 8;
@@ -120,7 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(479, 465);
+            this.ClientSize = new System.Drawing.Size(528, 514);
             this.Controls.Add(this.add);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Start);

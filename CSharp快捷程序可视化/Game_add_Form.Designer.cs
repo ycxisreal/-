@@ -71,7 +71,7 @@
             // 
             // confirm
             // 
-            this.confirm.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.confirm.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.confirm.Location = new System.Drawing.Point(342, 132);
             this.confirm.Name = "confirm";
             this.confirm.Size = new System.Drawing.Size(120, 45);
@@ -82,7 +82,7 @@
             // 
             // exit
             // 
-            this.exit.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exit.Location = new System.Drawing.Point(342, 82);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(120, 44);

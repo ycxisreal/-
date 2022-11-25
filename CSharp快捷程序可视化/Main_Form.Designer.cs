@@ -42,6 +42,7 @@
             // 
             this.GameButton.BackColor = System.Drawing.Color.Transparent;
             this.GameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GameButton.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GameButton.Location = new System.Drawing.Point(24, 93);
             this.GameButton.Name = "GameButton";
             this.GameButton.Size = new System.Drawing.Size(168, 60);
@@ -54,6 +55,7 @@
             // 
             this.WebButton.BackColor = System.Drawing.Color.Transparent;
             this.WebButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WebButton.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.WebButton.Location = new System.Drawing.Point(24, 195);
             this.WebButton.Name = "WebButton";
             this.WebButton.Size = new System.Drawing.Size(168, 60);
@@ -66,6 +68,7 @@
             // 
             this.About.BackColor = System.Drawing.Color.Transparent;
             this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.About.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.About.Location = new System.Drawing.Point(229, 93);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(168, 60);
@@ -93,6 +96,7 @@
             // 
             this.FilesButton.BackColor = System.Drawing.Color.Transparent;
             this.FilesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FilesButton.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FilesButton.Location = new System.Drawing.Point(229, 195);
             this.FilesButton.Name = "FilesButton";
             this.FilesButton.Size = new System.Drawing.Size(168, 60);
@@ -105,6 +109,7 @@
             // 
             this.tongji.BackColor = System.Drawing.Color.Transparent;
             this.tongji.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tongji.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tongji.Location = new System.Drawing.Point(24, 294);
             this.tongji.Name = "tongji";
             this.tongji.Size = new System.Drawing.Size(168, 60);
@@ -140,6 +145,7 @@
             this.Controls.Add(this.About);
             this.Controls.Add(this.WebButton);
             this.Controls.Add(this.GameButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

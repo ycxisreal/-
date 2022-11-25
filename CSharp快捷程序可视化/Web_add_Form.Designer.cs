@@ -39,9 +39,10 @@
             // 
             // webBox
             // 
+            this.webBox.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.webBox.Location = new System.Drawing.Point(114, 7);
             this.webBox.Name = "webBox";
-            this.webBox.Size = new System.Drawing.Size(348, 30);
+            this.webBox.Size = new System.Drawing.Size(348, 39);
             this.webBox.TabIndex = 0;
             // 
             // label1
@@ -68,13 +69,15 @@
             // 
             // nameBox
             // 
+            this.nameBox.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nameBox.Location = new System.Drawing.Point(114, 63);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(156, 30);
+            this.nameBox.Size = new System.Drawing.Size(156, 39);
             this.nameBox.TabIndex = 3;
             // 
             // confirm
             // 
+            this.confirm.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.confirm.Location = new System.Drawing.Point(322, 63);
             this.confirm.Name = "confirm";
             this.confirm.Size = new System.Drawing.Size(125, 44);
@@ -85,6 +88,7 @@
             // 
             // exit
             // 
+            this.exit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exit.Location = new System.Drawing.Point(322, 126);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(125, 44);
