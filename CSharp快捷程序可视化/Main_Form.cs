@@ -29,7 +29,15 @@ namespace CSharp快捷程序可视化
         public Main_Form()
         {
             InitializeComponent();
+            if(!File.Exists("UsingTime.txt"))
+                initializeTimeRecord();
             initializeCountServise();
+        }
+        private void initializeTimeRecord()
+        {
+            StreamWriter sw = new StreamWriter("UsingTime.txt", true);
+            sw.WriteLine(DateTime.Now);
+            sw.Close();
         }
         private void initializeCountServise()
         {
